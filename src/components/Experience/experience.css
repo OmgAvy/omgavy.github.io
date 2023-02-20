@@ -1,0 +1,105 @@
+/* ======================= Tab Container ======================= */
+.experience__container {
+    height: 65vh;
+}
+
+.experience__tab{
+    display: flex;
+    grid-template-columns: auto 3fr auto;
+    cursor: pointer;
+    gap: 2rem;
+}
+
+.experience__content{
+    padding-right: 7rem;
+}
+.experience__content ul li{
+    list-style: square;
+}
+
+.experience__content p{
+    margin: 0 0 0.3rem 0;
+    padding: 0 0 0.5rem 1rem;
+    font-weight: 300;
+    color: var(--color-light);
+}
+
+.experience__content ul li h4,ul li h3{
+    text-align: left;
+    color: var(--color-white);
+}
+
+.experience__content ul li ul{
+    padding: 0 1rem;
+}
+
+.experience__content ul li ul li{
+    list-style: circle;
+}
+
+.react-tabs__tab--selected{
+    content: '';
+    border-bottom: 0.2rem solid var(--color-primary);
+    margin-bottom: 1rem;
+}
+
+.react-tabs__tab-panel--selected{
+    border-color: var(--color-primary);
+}
+
+
+/* ============================= MEDIA QUERIES (MEDIUM DEVICES) ============================= */
+@media screen and (max-width: 1024px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+        width: var(--content-width-md);
+    }
+
+    .experience__content ul li{
+        list-style: none;
+    }
+    
+    .experience__content ul li h4,ul li h3{
+        text-align: left;
+        color: var(--color-white);
+    }
+    
+    .experience__content ul li ul{
+        padding: 1rem;
+    }
+    
+    .experience__content ul li ul li{
+        list-style: none;
+    }
+    
+    .react-tabs__tab-panel--selected{
+        border-color: var(--color-primary);
+    }
+    
+
+}
+
+/* ============================= MEDIA QUERIES (MEDIUM DEVICES) ============================= */
+@media screen and (max-width: 600px) {
+    .experience__container {
+        grid-template-columns: 1fr;
+        width: var(--content-width-md);
+    }
+
+    .experience__tab{
+        display: inline-flex;
+        text-align: center;
+    }
+    .experience__content{
+        padding-right: 0rem;
+    }
+    .experience__content ul li h4,ul li h3{
+        text-align: center;
+        color: var(--color-white);
+        
+    }
+
+    .experience__content ul li ul li{
+        list-style: none;
+    }
+}

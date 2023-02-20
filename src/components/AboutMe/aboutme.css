@@ -1,0 +1,71 @@
+.aboutme{
+    padding: 1rem 7rem 3rem;
+    background: var(--color-bg);
+    border-radius: 3rem;
+    margin-bottom: 1rem;
+}
+
+.aboutme h1, .about__container h2{
+    text-align: center;
+    padding: 1rem 0 1rem;
+    color: var(--color-primary);
+}
+
+.aboutme p{
+    text-align: center;
+}
+
+.about__container{
+    background: var(--color-bg);
+    padding: 2rem;    
+    border-radius: 2rem;
+}
+
+.about_experience {
+    display: grid;
+    grid-template-columns: 45% 60%;
+    gap: 7%;
+    padding: 0;
+    margin: 0;
+}
+
+
+/* ============================= MEDIA QUERIES (MEDIUM DEVICES) ============================= */
+/* @media screen and (max-width: 1024px) {
+    .about_experience {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+} */
+
+/* ============================= MEDIA QUERIES (MEDIUM DEVICES) ============================= */
+@media screen and (max-width: 600px) {
+    .about__container{
+    padding: 0.5rem;
+    }
+    .aboutme{
+        padding: 1.5rem;
+        margin-top: 11rem;
+    }
+
+    .aboutme h1{
+        font-size: xx-large;
+    }
+
+    .aboutme p{
+        font-size: smaller;
+        text-align: center;
+        padding: 0;
+        margin: 0;
+    }
+    
+    .about_experience{
+        display: grid;
+        grid-template-columns: 1fr;
+        align-items: center;
+        text-align: center; 
+        padding: 0;
+        margin: 0;
+    }
+
+}

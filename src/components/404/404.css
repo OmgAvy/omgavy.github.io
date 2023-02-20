@@ -1,0 +1,37 @@
+.page__404 {
+    text-align: left;
+    position: fixed;
+    margin: 5rem 0 5rem 10rem;
+}
+
+.page__404 h1{
+ font-size: 5rem;
+}
+
+.page__404 h5{
+ font-size: 1.5rem;
+ font-weight: 400;
+}
+
+.page__404 h6{
+ font-size: 1rem;
+ font-weight: 200;
+}
+
+.page__404 .btn.btn-primary{
+    margin-top: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* ============================= MEDIA QUERIES (MEDIUM DEVICES) ============================= */
+/* @media screen and (max-width: 1024px){
+
+} */
+
+/* ============================= MEDIA QUERIES (MEDIUM DEVICES) ============================= */
+@media screen and (max-width: 600px){   
+    .page__404 {
+        text-align: center;
+        margin: 15rem 4rem 0;
+    }
+}

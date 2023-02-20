@@ -1,0 +1,109 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.3rem 10rem 0.1rem 10rem;
+    align-items: center;
+}
+
+.navbar a {
+    font-size: 2.3rem;
+    font-weight: 800;
+}
+
+.nav-menu {
+    display: flex;
+}
+
+.nav-menu.active {
+    right: 0;
+}
+
+.nav-menu li {
+    padding: 0 1rem;
+}
+
+.nav-menu li a {
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.menu-bar{
+    display: none;
+    z-index: 3;
+}
+
+.menu-bar-icon{
+    font-size: 1.5rem;
+    color: var(--color-light);
+}
+
+/* ============================= MEDIA QUERIES (MEDIUM DEVICES) ============================= */
+/* @media screen and (max-width: 1024px){
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100vh;
+        background: var(--color-bg-variant);
+        position: fixed;
+        top: 0%;
+        right: -100%;
+        transition: var(--transition);
+    }
+
+    .nav-menu li{
+        padding: 1rem 0;
+    }
+
+    .nav-menu li a{
+        
+        font-size: 2rem;
+    }
+
+    .menu-bar{
+        display: initial;
+    }
+
+} */
+
+
+/* ============================= MEDIA QUERIES (SMALL DEVICES) ============================= */
+@media screen and (max-width: 600px){
+    .nav-menu{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 30%;
+        height: 100vh;
+        background: var(--color-bg-variant);
+        position: fixed;
+        top: 0%;
+        right: -100%;
+        transition: var(--transition);
+    }
+
+    .navbar{
+        padding: 0rem 1rem 0rem 1rem;
+    }
+    
+    .nav-menu li{
+        padding: 1rem 0;    
+    }
+
+    .nav-menu li a{
+        font-size: 3rem;
+    }
+
+    .menu-bar{
+        top: 2%;
+        right: 5%;
+        position: fixed;
+        display: flex;
+    }
+
+    .menu-bar-icon{
+        font-size: x-large;
+    }
+
+}
